@@ -414,3 +414,15 @@ Le limiteur d'usage est en mémoire : avec plusieurs instances, prévoir un stoc
 4. Amélioration de l'extraction (colonnes, tableaux) et surlignage du segment traduit dans le PDF.
 5. OCR local optionnel (p. ex. Tesseract) pour réduire la dépendance externe.
 6. Notifications e-mail (demandes traitées, signalements).
+
+## 31. Outils IA utilisés
+
+Ce projet a été développé avec l'aide de **Claude** (Anthropic) et de **Cursor**, des assistants de programmation par IA. Ils ont servi à :
+
+- concevoir l'architecture et écrire une partie du code (backend, interface, tests) ;
+- relire le code, diagnostiquer et corriger des erreurs ;
+- rédiger la documentation.
+
+Toutes les propositions de l'IA ont été relues, testées (`npm run typecheck`, `npm test`, `npm run build`) et validées par l'équipe avant d'être intégrées.
+
+Ces assistants n'ont été utilisés que pendant le développement. À l'exécution, l'application peut appeler des fournisseurs de traduction et d'IA (DeepL, OpenAI, Anthropic, Gemini…) uniquement si l'administrateur les configure (voir la configuration des fournisseurs ci-dessus).
