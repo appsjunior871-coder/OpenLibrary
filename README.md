@@ -158,7 +158,7 @@ Principes :
 │       ├── validation/          schémas Zod
 │       ├── env.ts               configuration validée
 │       └── rate-limit.ts        limiteur à fenêtre glissante
-├── tests/                       Vitest (setup, helpers, 5 suites)
+├── tests/                       Vitest (setup, helpers, 6 suites)
 ├── .env.example
 ├── CLAUDE.md
 └── README.md
@@ -257,6 +257,8 @@ Clé : `(hash SHA-256 du segment normalisé, langue source, langue cible, fourni
 - Aucun mot de passe par défaut : l'administrateur est créé via la CLI avec saisie masquée ou variable d'environnement (§22).
 
 ## 16. Licences et droits de diffusion
+
+Le code d'OpenLibrary est publié sous licence MIT (voir `LICENSE`). Cela ne concerne pas les documents hébergés, qui gardent chacun leur propre licence.
 
 Licences proposées : `src/lib/validation/documents.ts` (`LICENSES`). Seules celles de `DISTRIBUTABLE_LICENSES` (domaine public, Creative Commons, autorisation explicite de l'ayant droit…) permettent la publication. Chaque document affiche sa licence et ses notes ; le téléchargement est activable par document (`allowDownload`). L'approbation de diffusion est tracée (qui, quand, note).
 
@@ -391,7 +393,7 @@ Le limiteur d'usage est en mémoire : avec plusieurs instances, prévoir un stoc
 
 - `npm run typecheck` : 0 erreur.
 - `npm run build` : succès (Next.js 16, Turbopack).
-- `npm test` : **59 tests, 59 réussis** (5 suites : `auth`, `library`, `translation`, `admin`, `unit`), base PGlite en mémoire, fournisseurs mock.
+- `npm test` : **64 tests, 64 réussis** (6 suites : `auth`, `library`, `translation`, `admin`, `unit`, `gemini`), base PGlite en mémoire, fournisseurs mock.
 - Navigateur (dev, fournisseurs mock, PGlite fichier) : accueil avec données réelles, catalogue et facettes, inscription → tableau de bord, ouverture du lecteur, menu « Lire dans une autre langue » (langue source grisée), traduction de la page 1 en français (3 segments « nouvellement traduits »), lien profond `?page=2&lang=ar`, résumé pages 1–3, accès `/admin/*` refusé pour un étudiant (403).
 - Non vérifié manuellement dans le navigateur : les pages d'administration avec un compte admin (leur API l'est par les tests), et l'affichage sur très petit écran (< 400 px).
 
