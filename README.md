@@ -5,6 +5,27 @@ Plateforme académique de lecture de documents PDF avec **traduction à la deman
 > Parcours produit : **Recherche → Ouverture du document → Choix de la langue → Traduction à la demande → Lecture.**
 > La langue cible se choisit *après* l'ouverture, depuis le bouton « 🌐 Lire dans une autre langue » du lecteur. Le PDF original n'est jamais modifié.
 
+## Présentation du projet
+
+![OpenLibrary — présentation](docs/slides/slide-01.png)
+
+📄 [Voir la présentation en PDF](docs/OpenLibrary-presentation.pdf) · 📥 [Télécharger le PowerPoint](docs/OpenLibrary-presentation.pptx)
+
+<details>
+<summary><strong>Afficher toutes les diapositives (10)</strong></summary>
+
+![Diapositive 2](docs/slides/slide-02.png)
+![Diapositive 3](docs/slides/slide-03.png)
+![Diapositive 4](docs/slides/slide-04.png)
+![Diapositive 5](docs/slides/slide-05.png)
+![Diapositive 6](docs/slides/slide-06.png)
+![Diapositive 7](docs/slides/slide-07.png)
+![Diapositive 8](docs/slides/slide-08.png)
+![Diapositive 9](docs/slides/slide-09.png)
+![Diapositive 10](docs/slides/slide-10.png)
+
+</details>
+
 ---
 
 ## Sommaire
